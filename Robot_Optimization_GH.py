@@ -1183,7 +1183,7 @@ def GA_Optimize(generations=100, population_size=5, simulation_frames=50000):
     print(f'Best Speed: {best_speed}')
     now = datetime.datetime.now()
 
-    file = "/home/elo2124/saved_heaps/robot_" + now.strftime("%Y%m%d%H%M%S") + ".txt"
+    file = "<INSERT FILE PATH>" + now.strftime("%Y%m%d%H%M%S") + ".txt"
     print(f'Writing to file: {file}')
     with open(file, 'w') as f:
         f.write('[')
@@ -1247,7 +1247,7 @@ if __name__ == '__main__':
     record=True # Change to True to record Gif of simulation
     if record:
         now = datetime.datetime.now()
-        f = "/home/elo2124/saved_videos/robot_" + now.strftime("%Y%m%d%H%M%S") +  ".gif"
+        f = "<INSERT FILE PATH>" + now.strftime("%Y%m%d%H%M%S") +  ".gif"
         print(f'Saving file to {f}')
         writergif = animation.PillowWriter(fps=30)
         anim.save(f, writer=writergif)
